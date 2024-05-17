@@ -1,18 +1,68 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.background{
+    background: linear-gradient(to bottom, rgba(58, 110, 165, 0.35) 0%, #ffffff 15%)
+
+}
+.clr-prim{
+    border-color: rgb(58, 110, 165);
+}
+.border{
+    border-radius: .5rem;
+}
 .menu-bar{
     width: 100%;
     height: 34px;
-    background-color: red;
     display: flex;
 
     -webkit-app-region: drag;
 }
+    .menu-bar button{
+        -webkit-app-region: no-drag;
+    }
     .menu-btn{
-    
-        width: 44px;
+        width: 40px;
         height: 100%;
         padding: 0;
         margin: 0;
     }
     .menu-bar svg{
         vertical-align: baseline !important;
+    }
+        .btn-minimize svg{
+            padding: 6px;
+        }
+        .btn-shutdown svg{
+            padding: 1px;
+        }
+.content{
+    padding: 18px;
+    padding-top: 0px;
+}
+    .content h1{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .content hr{
+        margin: 10px 0 15px;
+    }
+    .content p {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+    .content-input{
+        padding: 12px;
+    }
+        .input-headline{
+            font-weight: 700;
+        }
+        .form-label{
+            margin-bottom: .2rem;
+        }
+        .content input{
+            background-color: rgba(58, 110, 165, 0.1);
+        }
+    .content-result{
+        padding: 12px;
     }
