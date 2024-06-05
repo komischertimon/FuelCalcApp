@@ -13,7 +13,7 @@ const createWindow = () => {
         }
     })
 
-    win.loadFile('main.html')
+    win.loadFile('pages/main/main.html')
     win.setResizable(false)
 
     win.webContents.openDevTools()
